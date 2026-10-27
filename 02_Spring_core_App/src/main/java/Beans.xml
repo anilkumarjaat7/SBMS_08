@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="des" class="com.p1.entity.DesigleEngine" />
+      <bean id="pat" class="com.p1.entity.PatrolEngine" />
+      
+      
+      
+        <bean class="com.p1.model.Car" >
+        <!--Stter Engication-->
+      <!--  <property name="eng" ref="des" />-->
+      
+      <!--Constructor -->
+         <constructor-arg ref="pat" />
+        </bean>
+
+</beans>
